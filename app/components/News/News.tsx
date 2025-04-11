@@ -29,7 +29,7 @@ export default function News() {
       )}
       <div className="backgroundShadow absolute inset-0 z-[1]"></div>
       <div className="relative z-10 mt-60 flex flex-col justify-center">
-        <h1 className="mb-5 text-center text-[4rem] leading-none font-black text-white uppercase">
+        <h1 className="mb-5 text-center text-[4rem] leading-none font-bold text-white uppercase">
           Explore as <br />
           skins especiais
         </h1>
