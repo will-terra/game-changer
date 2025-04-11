@@ -4,8 +4,8 @@ interface ImageData {
   url: string;
 }
 
-export const api = createApi({
-  reducerPath: "api",
+export const backgroundApi = createApi({
+  reducerPath: "backgroundApi",
   baseQuery: fetchBaseQuery({ baseUrl: "/" }),
   endpoints: (builder) => ({
     getBackgroundImage: builder.query<ImageData, string>({
@@ -22,4 +22,4 @@ export const api = createApi({
   }),
 });
 
-export const { useGetBackgroundImageQuery } = api;
+export const { useGetBackgroundImageQuery } = backgroundApi;

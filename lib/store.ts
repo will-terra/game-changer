@@ -1,8 +1,9 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
-import { api } from "./features/services/backgroundAPI";
+import { backgroundApi } from "./features/services/backgroundAPI";
 import { counterSlice } from "./features/counter/counterSlice";
 import { quotesApiSlice } from "./features/quotes/quotesApiSlice";
+import { productsApi } from "./features/services/productsAPI";
 
 export type RootState = ReturnType<typeof rootReducer>;
 
@@ -10,9 +11,12 @@ const rootReducer = combineSlices(counterSlice, quotesApiSlice);
 
 export const makeStore = () => {
   return configureStore({
-    reducer: { [api.reducerPath]: api.reducer },
+    reducer: {
+      [backgroundApi.reducerPath]: backgroundApi.reducer,
+      [productsApi.reducerPath]: productsApi.reducer
+    },
     middleware: (getDefaultMiddleware) => {
-      return getDefaultMiddleware().concat(api.middleware);
+      return getDefaultMiddleware().concat(backgroundApi.middleware).concat(productsApi.middleware);
     },
   });
 };
