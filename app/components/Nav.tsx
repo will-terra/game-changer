@@ -45,16 +45,14 @@ export default function Nav() {
         <Image src="Cart.svg" alt="cart" width={36} height={24} />
       </nav>
       <div className="flex items-center gap-8">
-        <button className="bg-primary-pink flex h-11 w-56 items-center justify-center gap-4 font-bold text-white uppercase shadow-[0_0_0_3px_#000916,0_0_0_5px_#e73387]">
-          sair
-          <Image
-            src="Logout.svg"
-            alt="Logout icon"
-            aria-hidden
-            width={24}
-            height={24}
-          />
-        </button>
+        <Image
+          src="/ExitButton.png"
+          alt="Logout Button"
+          aria-hidden
+          width={224}
+          height={48}
+        />
+
         <Image src="World.svg" alt="world icon" width={20} height={20} />
         <Image src="User.svg" alt="user icon" width={40} height={40} />
       </div>

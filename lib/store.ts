@@ -13,10 +13,12 @@ export const makeStore = () => {
   return configureStore({
     reducer: {
       [backgroundApi.reducerPath]: backgroundApi.reducer,
-      [productsApi.reducerPath]: productsApi.reducer
+      [productsApi.reducerPath]: productsApi.reducer,
     },
     middleware: (getDefaultMiddleware) => {
-      return getDefaultMiddleware().concat(backgroundApi.middleware).concat(productsApi.middleware);
+      return getDefaultMiddleware()
+        .concat(backgroundApi.middleware)
+        .concat(productsApi.middleware);
     },
   });
 };

@@ -6,6 +6,7 @@
   --color-primary-lightBlue: #568eff;
   --color-primary-pink: #e73387;
   --color-primary-lightGray: #dde6ff;
+  --color-secondary-midBlue: #2f3a51;
   --font-main: "Kanit", "sans-serif";
 }
 
@@ -28,5 +29,14 @@
 
   .scrollbar::-webkit-scrollbar-thumb:hover {
     background: #568eff;
+  }
+
+  .backgroundShadow {
+    background: linear-gradient(
+      43.26deg,
+      rgba(7, 13, 29, 0.83) 30.65%,
+      rgba(15, 27, 53, 0.629611) 50.68%,
+      rgba(15, 27, 53, 0) 71.27%
+    );
   }
 }
