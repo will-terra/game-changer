@@ -1,7 +1,12 @@
 import type { Metadata } from "next";
+import News from "./components/News";
 
 export default function IndexPage() {
-  return <h1 className="text-3xl font-bold underline">Hello world!</h1>;
+  return (
+    <div className="flex flex-col">
+      <News />
+    </div>
+  );
 }
 
 export const metadata: Metadata = {
