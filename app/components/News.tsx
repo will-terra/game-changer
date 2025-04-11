@@ -8,7 +8,7 @@ export default function News() {
   );
 
   return (
-    <section className="bg-primary-darkBlue relative flex min-h-screen min-w-[99dvw] items-center justify-center">
+    <section className="bg-primary-darkBlue relative flex min-h-screen min-w-screen items-center justify-center">
       {isLoading ? (
         <></>
       ) : data?.url ? (

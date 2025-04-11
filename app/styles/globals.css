@@ -3,7 +3,30 @@
 @theme {
   --color-primary-darkBlue: #000916;
   --color-primary-midBlue: #0f1b35;
+  --color-primary-lightBlue: #568eff;
   --color-primary-pink: #e73387;
   --color-primary-lightGray: #dde6ff;
   --font-main: "Kanit", "sans-serif";
+}
+
+@layer utilities {
+  .scrollbar::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    border-radius: 100vh;
+    background: #0f1b35;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background: #0f1b35;
+    border-radius: 100vh;
+    border: 3px solid #568eff;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #568eff;
+  }
 }

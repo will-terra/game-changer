@@ -17,7 +17,7 @@ export default function RootLayout({ children }: Props) {
     <StoreProvider>
       <html lang="en" className="m-0 min-h-screen p-0 font-sans">
         <body
-          className={`${kanit.className} m-0 flex min-h-screen flex-col p-0 font-sans`}
+          className={`${kanit.className} scrollbar m-0 flex min-h-screen flex-col overflow-x-hidden p-0`}
         >
           <Nav />
           <main className="flex grow flex-col items-center justify-center">
