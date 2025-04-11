@@ -2,7 +2,8 @@
 
 @theme {
   --color-primary-darkBlue: #000916;
+  --color-primary-midBlue: #0f1b35;
   --color-primary-pink: #e73387;
+  --color-primary-lightGray: #dde6ff;
   --font-main: "Kanit", "sans-serif";
-
 }

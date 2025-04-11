@@ -4,6 +4,7 @@ import { Kanit } from "next/font/google";
 
 import "./styles/globals.css";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
 
 interface Props {
   readonly children: ReactNode;
@@ -22,16 +23,7 @@ export default function RootLayout({ children }: Props) {
           <main className="flex grow flex-col items-center justify-center">
             {children}
           </main>
-          <footer className="justify-center self-center">
-            <span>Learn </span>
-            <a
-              href="https://reactjs.org"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              React
-            </a>
-          </footer>
+          <Footer />
         </body>
       </html>
     </StoreProvider>
