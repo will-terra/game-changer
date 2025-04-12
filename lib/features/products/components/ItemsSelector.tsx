@@ -17,15 +17,15 @@ export function ItemsSelector() {
       <div className="flex w-[19.75rem] flex-wrap justify-around gap-4 p-4 text-white">
         <div
           className="flex flex-col items-center"
-          onClick={() => dispatch(setSelectedCategory("uniforms"))}
-        >
-          <p>Uniformes</p>
-        </div>
-        <div
-          className="flex flex-col items-center"
           onClick={() => dispatch(setSelectedCategory("weapons"))}
         >
           <p>Armas</p>
+        </div>
+        <div
+          className="flex flex-col items-center"
+          onClick={() => dispatch(setSelectedCategory("uniforms"))}
+        >
+          <p>Uniformes</p>
         </div>
         <div
           className="flex flex-col items-center"

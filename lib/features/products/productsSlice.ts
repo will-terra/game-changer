@@ -1,5 +1,6 @@
 import { createAppSlice } from "@/lib/createAppSlice";
 import { ProductType } from "./api/productsAPI";
+import { PayloadAction } from "@reduxjs/toolkit";
 
 export const productsSlice = createAppSlice({
   name: "products",
@@ -19,7 +20,7 @@ export const productsSlice = createAppSlice({
     setError: (state, action) => {
       state.error = action.payload;
     },
-    setSelectedCategory: (state, action) => {
+    setSelectedCategory: (state, action: PayloadAction<ProductType>) => {
       state.selectedCategory = action.payload;
     },
   },
