@@ -14,7 +14,7 @@ export function ItemsSelector() {
   };
 
   return (
-    <div className="bg-secondary-lightBlue z-10 mt-30 flex h-20 w-[37.5rem] items-center justify-between">
+    <div className="bg-secondary-lightBlue z-10 mt-50 flex h-20 w-[37.5rem] items-center justify-between">
       <Image
         src="/SelectorBorder.svg"
         alt="selector border"

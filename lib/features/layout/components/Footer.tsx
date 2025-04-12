@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-midBlue flex h-[12.75rem] items-center justify-center gap-24">
+    <footer className="bg-primary-midBlue z-10 flex h-[12.75rem] w-screen items-center justify-center gap-24">
       <nav className="flex gap-7">
         <Link href="/" className="text-primary-lightGray underline">
           Política de privacidade
