@@ -10,7 +10,11 @@ export function News() {
   );
   const backgroundImage = data?.url;
 
-  const { data: weapons } = useGetProductsQuery("weapons");
+  const { data: items } = useGetProductsQuery("weapons");
+  const NewsItems = items?.map((item, index) => ({
+    ...item,
+    imageIndex: String(index % 5) as "0" | "1" | "2" | "3" | "4",
+  }));
 
   return (
     <section className="bg-primary-darkBlue relative flex min-h-screen min-w-screen items-center justify-center">
@@ -47,9 +51,9 @@ export function News() {
           />
 
           <div className="mb-40 flex gap-4">
-            {weapons
-              ?.slice(0, 5)
-              .map((weapon) => <NewsCard key={weapon.name} {...weapon} />)}
+            {NewsItems?.slice(0, 5).map((item) => (
+              <NewsCard key={item.name} {...item} />
+            ))}
           </div>
 
           <Image
