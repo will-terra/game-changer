@@ -10,7 +10,10 @@ interface Props {
   readonly children: ReactNode;
 }
 
-const kanit = Kanit({ weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"], subsets: ["latin"] });
+const kanit = Kanit({
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  subsets: ["latin"],
+});
 
 export default function RootLayout({ children }: Props) {
   return (
