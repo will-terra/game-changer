@@ -8,7 +8,7 @@ export const productsSlice = createAppSlice({
     items: [],
     isLoading: false,
     error: null,
-    selectedCategory: "uniforms" as ProductType,
+    selectedCategory: "weapons" as ProductType,
   },
   reducers: {
     setItems: (state, action) => {

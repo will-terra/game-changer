@@ -29,11 +29,10 @@ export function ItemsDisplay() {
       />
       <ItemsSelector />
 
-      <div className="relative z-10 mt-40 flex min-h-[83rem] flex-col justify-start">
-        <section className="mb-6 flex justify-between">
+      <div className="relative z-10 mt-40 flex min-h-[83rem] min-w-screen flex-col justify-start">
+        <section className="mb-6 flex justify-around w-full">
           <p className="mb-2 text-4xl font-bold text-white/91 uppercase">
-            Uniformes
-          </p>
+            {selectedCategory === "uniforms" ? "Uniformes" : selectedCategory === "peds" ? "Peds" : selectedCategory === "weapons" ? "Armas" : "Loading"}          </p>
           <Image src="/Filtros.svg" alt="filtros" width={140} height={32} />
         </section>
 

@@ -62,7 +62,7 @@ export function News() {
             alt="Barra Rosa"
             width={1920}
             height={16}
-            className="mb-10"
+            className="min-w-screen"
           />
         </section>
       </div>
