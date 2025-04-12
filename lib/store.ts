@@ -1,13 +1,8 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
-import { combineSlices, configureStore } from "@reduxjs/toolkit";
+import { configureStore } from "@reduxjs/toolkit";
 import { backgroundApi } from "./features/shared/api/backgroundAPI";
-import { counterSlice } from "./features/counter/counterSlice";
-import { quotesApiSlice } from "./features/quotes/quotesApiSlice";
+
 import { productsApi } from "./features/products/api/productsAPI";
-
-export type RootState = ReturnType<typeof rootReducer>;
-
-const rootReducer = combineSlices(counterSlice, quotesApiSlice);
 
 export const makeStore = () => {
   return configureStore({
@@ -26,6 +21,7 @@ export const makeStore = () => {
 export type AppStore = ReturnType<typeof makeStore>;
 
 export type AppDispatch = AppStore["dispatch"];
+export type RootState = ReturnType<AppStore["getState"]>;
 export type AppThunk<ThunkReturnType = void> = ThunkAction<
   ThunkReturnType,
   RootState,
