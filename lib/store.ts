@@ -1,9 +1,9 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { combineSlices, configureStore } from "@reduxjs/toolkit";
-import { backgroundApi } from "./features/services/backgroundAPI";
+import { backgroundApi } from "./features/shared/api/backgroundAPI";
 import { counterSlice } from "./features/counter/counterSlice";
 import { quotesApiSlice } from "./features/quotes/quotesApiSlice";
-import { productsApi } from "./features/services/productsAPI";
+import { productsApi } from "./features/products/api/productsAPI";
 
 export type RootState = ReturnType<typeof rootReducer>;
 

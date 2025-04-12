@@ -1,6 +1,6 @@
 "use client";
-import { useGetBackgroundImageQuery } from "@/lib/features/services/backgroundAPI";
-import { useGetProductsQuery } from "@/lib/features/services/productsAPI";
+import { useGetBackgroundImageQuery } from "@/lib/features/shared/api/backgroundAPI";
+import { useGetProductsQuery } from "@/lib/features/products/api/productsAPI";
 import Image from "next/image";
 import NewsCard from "./NewsCard";
 

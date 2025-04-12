@@ -1,5 +1,5 @@
+import News from "@/lib/features/products/components/News";
 import type { Metadata } from "next";
-import News from "./components/News/News";
 
 export default function IndexPage() {
   return (

@@ -1,7 +1,7 @@
-import { Product } from "@/lib/features/services/productsAPI";
+import { Product } from "@/lib/features/products/api/productsAPI";
 import Image from "next/image";
 
-interface NewsCardProps extends Product {}
+interface NewsCardProps extends Product { }
 
 export default function NewsCard({ name, images, price }: NewsCardProps) {
   return (

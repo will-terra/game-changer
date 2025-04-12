@@ -3,8 +3,8 @@ import { StoreProvider } from "./StoreProvider";
 import { Kanit } from "next/font/google";
 
 import "./styles/globals.css";
-import Nav from "./components/Nav";
-import Footer from "./components/Footer";
+import Nav from "../lib/features/layout/components/Nav";
+import Footer from "../lib/features/layout/components/Footer";
 
 interface Props {
   readonly children: ReactNode;
