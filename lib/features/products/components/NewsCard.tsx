@@ -16,10 +16,10 @@ export function NewsCard({ name, images, price, imageIndex }: NewsCardProps) {
         className="absolute inset-0 z-0 mx-auto"
         aria-hidden
       />
-      <div className="flex grow items-center z-10">
+      <div className="flex grow items-center z-10 -mt-2">
         <Image src={images[0]} alt={name} width={152} height={88} />
       </div>
-      <h2 className="mx-1 mb-2 -mt-6 text-white">{name}</h2>
+      <h2 className="mx-1 mb-2 -mt-4 text-white">{name}</h2>
       <div className="relative flex w-fit justify-center px-4 py-0.5">
         <Image
           src="/PriceRectangle.png"

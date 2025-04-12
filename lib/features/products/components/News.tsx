@@ -50,7 +50,7 @@ export function News() {
             className="mx-auto mb-4"
           />
 
-          <div className="mb-40 flex gap-4">
+          <div className="mb-40 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5">
             {NewsItems?.slice(0, 5).map((item) => (
               <NewsCard key={item.name} {...item} />
             ))}
