@@ -6,7 +6,7 @@ import "./styles/globals.css";
 import Nav from "../lib/features/layout/components/Nav";
 import Footer from "../lib/features/layout/components/Footer";
 
-interface Props {
+interface RootLayoutProps {
   readonly children: ReactNode;
 }
 
@@ -15,7 +15,7 @@ const kanit = Kanit({
   subsets: ["latin"],
 });
 
-export default function RootLayout({ children }: Props) {
+export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <StoreProvider>
       <html lang="en" className="m-0 min-h-screen p-0 font-sans">
