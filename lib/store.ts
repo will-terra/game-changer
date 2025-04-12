@@ -1,12 +1,13 @@
 import type { Action, ThunkAction } from "@reduxjs/toolkit";
 import { configureStore } from "@reduxjs/toolkit";
 import { backgroundApi } from "./features/shared/api/backgroundAPI";
-
+import { productsSlice } from "./features/products/productsSlice";
 import { productsApi } from "./features/products/api/productsAPI";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
+      ["products"]: productsSlice.reducer,
       [backgroundApi.reducerPath]: backgroundApi.reducer,
       [productsApi.reducerPath]: productsApi.reducer,
     },

@@ -6,10 +6,8 @@ interface ItemCard extends Product {
 }
 
 export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
-  console.log(imageIndex);
-
   return (
-    <div className="bg-primary-midBlue relative flex min-h-[19.75rem] min-w-60 flex-col items-center justify-center border pb-6">
+    <div className="bg-primary-midBlue relative flex min-h-[19.75rem] min-w-60 flex-col items-center justify-center pb-6">
       <Image
         src={`/ItemShape-${imageIndex}.png`}
         alt="items background image"
