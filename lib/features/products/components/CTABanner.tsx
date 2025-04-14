@@ -19,7 +19,7 @@ export function CTABanner(props: CTABannerProps) {
   const futureDate = "2025-04-27T12:00:00.000Z";
 
   return (
-    <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center justify-center">
+    <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center justify-center overflow-hidden">
       <div className="flex w-full justify-center">
         <div className="flex h-full max-w-[27.25rem] flex-col items-start justify-center gap-8">
           <h2 className="text-[40px] font-bold text-white uppercase">
@@ -33,7 +33,7 @@ export function CTABanner(props: CTABannerProps) {
           {futureDate && (
             <FlipClockCountdown
               to={futureDate}
-              labels={["DAYS", "HOURS", "MINUTES", "SECONDS"]}
+              labels={["DIAS", "HORAS", "MINUTOS", "SEGUNDOS"]}
               showSeparators={false}
               labelStyle={{
                 fontSize: 10,
