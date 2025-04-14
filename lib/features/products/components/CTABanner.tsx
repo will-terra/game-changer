@@ -1,17 +1,22 @@
 "use client";
-import FlipClockCountdown from "@leenguyen/react-flip-clock-countdown";
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
+import dynamic from "next/dynamic";
 import Image from "next/image";
+
+const FlipClockCountdown = dynamic(
+  () => import("@leenguyen/react-flip-clock-countdown"),
+  { ssr: false },
+);
 
 interface CTABannerProps {
   title: string;
   subTitle: string;
   description: string;
-  futureDate: Date;
 }
 
 export function CTABanner(props: CTABannerProps) {
-  const { title, subTitle, description, futureDate } = props;
+  const { title, subTitle, description } = props;
+  const futureDate = "2025-04-27T12:00:00.000Z";
 
   return (
     <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center justify-center">

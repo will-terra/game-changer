@@ -11,7 +11,6 @@ export default function IndexPage() {
       <ItemsDisplay />
       <HighlightedItems />
       <CTABanner
-        futureDate={new Date(2025, 3, 27, 12, 0, 0)}
         title="Five M Nite"
         subTitle="50% de desconto"
         description="Lorem ipsum dolor sit amet consectetur. Aliquet ac massa metus faucibus viverra laoreet varius. Sit ut."
