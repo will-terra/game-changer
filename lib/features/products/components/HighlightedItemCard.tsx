@@ -10,7 +10,7 @@ interface HighlightedItemCardProps {
 export function HighlightedItemCard(props: HighlightedItemCardProps) {
   const { backgroundImage, image, name, origin, size } = props;
   return size === "large" ? (
-    <div className="relative flex h-[30rem] w-96 flex-col items-center justify-center gap-4 bg-white shadow">
+    <div className="relative flex h-[30rem] w-96 flex-col items-center justify-center gap-4 bg-white shadow-gray-400 shadow-2xl">
       <Image
         src={backgroundImage}
         alt="Highlighted item background image"
@@ -41,7 +41,7 @@ export function HighlightedItemCard(props: HighlightedItemCardProps) {
       </div>
     </div>
   ) : (
-    <div className="relative flex h-[9.25rem] w-[27rem] items-center justify-center gap-4 bg-white shadow">
+    <div className="relative flex h-[9.25rem] w-[27rem] items-center justify-center gap-4 bg-white  shadow-gray-400 shadow-2xl">
       <Image
         src={backgroundImage}
         alt="Highlighted item background image"
