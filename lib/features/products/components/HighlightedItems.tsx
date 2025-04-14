@@ -13,7 +13,7 @@ export function HighlightedItems(props: Props) {
             destaque
           </span>
         </h2>
-        <div className="grid grid-cols-3 gap-12 place-items-center">
+        <div className="grid grid-cols-3 place-items-center gap-12">
           <HighlightedItemCard
             size="large"
             backgroundImage="/HighlightedShape-0.png"
@@ -58,7 +58,7 @@ export function HighlightedItems(props: Props) {
         </div>
         <Link
           href="/"
-          className="bg-secondary-blue mx-auto w-fit mt-8 px-40 py-4 text-white uppercase"
+          className="bg-secondary-blue mx-auto mt-8 w-fit px-40 py-4 text-white uppercase"
         >
           Acessar Jogo
         </Link>
