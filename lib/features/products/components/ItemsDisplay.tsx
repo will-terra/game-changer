@@ -30,13 +30,20 @@ export function ItemsDisplay() {
       <ItemsSelector />
 
       <div className="relative z-10 mt-40 flex min-h-[83rem] min-w-screen flex-col justify-start">
-        <section className="mb-6 flex justify-around w-full">
+        <section className="mb-6 flex w-full justify-around">
           <p className="mb-2 text-4xl font-bold text-white/91 uppercase">
-            {selectedCategory === "uniforms" ? "Uniformes" : selectedCategory === "peds" ? "Peds" : selectedCategory === "weapons" ? "Armas" : "Loading"}          </p>
+            {selectedCategory === "uniforms"
+              ? "Uniformes"
+              : selectedCategory === "peds"
+                ? "Peds"
+                : selectedCategory === "weapons"
+                  ? "Armas"
+                  : "Loading"}{" "}
+          </p>
           <Image src="/Filtros.svg" alt="filtros" width={140} height={32} />
         </section>
 
-        <div className="mb-40 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
+        <div className="mx-auto mb-40 grid w-fit grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {items
             ?.slice(0, 15)
             .map((item) => <ItemCard key={item.name} {...item} />)}
