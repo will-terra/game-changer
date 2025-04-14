@@ -14,8 +14,8 @@ export function CTABanner(props: CTABannerProps) {
   const { title, subTitle, description, futureDate } = props;
 
   return (
-    <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center">
-      <div className="ml-32 flex">
+    <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center justify-center">
+      <div className="flex w-full justify-center">
         <div className="flex h-full max-w-[27.25rem] flex-col items-start justify-center gap-8">
           <h2 className="text-[40px] font-bold text-white uppercase">
             {title}
@@ -50,12 +50,13 @@ export function CTABanner(props: CTABannerProps) {
           />
         </div>
       </div>
-      <div className="relative ml-auto h-full w-3/5">
+      <div className="relative h-full w-full">
         <Image
           src="/CTABanner.png"
           alt="Five M Nite"
-          fill
-          className="absolute right-0 max-w-[66rem]"
+          width={1058}
+          height={768}
+          className="absolute right-0 ml-auto max-w-[66rem]"
         />
       </div>
     </div>
