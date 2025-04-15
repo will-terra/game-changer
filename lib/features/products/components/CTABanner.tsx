@@ -2,6 +2,7 @@
 import "@leenguyen/react-flip-clock-countdown/dist/index.css";
 import dynamic from "next/dynamic";
 import Image from "next/image";
+import Link from "next/link";
 
 const FlipClockCountdown = dynamic(
   () => import("@leenguyen/react-flip-clock-countdown"),
@@ -45,14 +46,15 @@ export function CTABanner(props: CTABannerProps) {
               duration={0.5}
             />
           )}
-
-          <Image
-            src="/CTAButton.svg"
-            alt="Acessar Jogo"
-            width={232}
-            height={48}
-            className="mt-2 hover:fill-amber-300"
-          />
+          <Link href="#">
+            <Image
+              src="/CTAButton.svg"
+              alt="Acessar Jogo"
+              width={232}
+              height={48}
+              className="mt-2 hover:fill-amber-300"
+            />
+          </Link>
         </div>
       </div>
       <div className="relative h-full w-full">
