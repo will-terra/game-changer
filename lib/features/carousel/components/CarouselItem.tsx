@@ -13,9 +13,8 @@ type CarouselItemProps = {
 export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
   return (
     <div
-      className={`relative flex h-[39rem] transform flex-col justify-between pt-40 pb-10 transition-all duration-300 ${
-        isActive ? "scale-105 opacity-100" : "opacity-70 blur"
-      } `}
+      className={`relative flex h-[39rem] transform flex-col justify-between pt-40 pb-10 transition-all duration-300 ${isActive ? "scale-105 opacity-100" : "opacity-70 blur"
+        } `}
     >
       <Image
         src={item?.images?.[0] || PLACEHOLDER_IMAGE}
@@ -38,7 +37,7 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
             />
             <p className="z-10 text-white">
               {item.price}
-              {item.price === 0 || item.price === 1 ? "Quantion" : "Quantions"}
+              {item.price === 0 || item.price === 1 ? " Quantion" : " Quantions"}
             </p>
           </div>
         </div>
