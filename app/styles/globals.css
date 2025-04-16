@@ -43,14 +43,14 @@
       rgba(15, 27, 53, 0) 71.27%
     );
   }
-}
 
-.inactive {
-  filter: blur(4px);
-  transition: filter 0.3s ease;
-}
+  .inactive {
+    filter: blur(4px);
+    transition: filter 0.3s ease;
+  }
 
-.active {
-  filter: none;
-  transition: filter 0.3s ease;
+  .active {
+    filter: none;
+    transition: filter 0.3s ease;
+  }
 }

@@ -24,7 +24,7 @@ export function ItemsSelector() {
         className="hidden lg:flex"
       />
       <div className="mt-5 mr-14 ml-10 flex h-full w-[19.75rem] flex-col gap-4 p-4 text-white lg:ml-0 lg:flex-row">
-        <div className="flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="weapons"
@@ -41,14 +41,23 @@ export function ItemsSelector() {
             Armas
             <Image
               src="/DownRectangle.png"
-              alt="down set"
+              alt=""
               width={104}
               height={8}
               className={`mt-4 ${selectedCategory === "weapons" ? "flex" : "hidden"}`}
+              aria-hidden
+            />
+            <Image
+              src="/SelectorElipse.png"
+              alt=""
+              width={250}
+              height={57}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "weapons" ? "flex" : "hidden"}`}
+              aria-hidden
             />
           </label>
         </div>
-        <div className="flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="uniforms"
@@ -65,15 +74,24 @@ export function ItemsSelector() {
             Uniformes
             <Image
               src="/DownRectangle.png"
-              alt="down set"
+              alt=""
               width={104}
               height={8}
               className={`mt-4 ${selectedCategory === "uniforms" ? "flex" : "hidden"}`}
+              aria-hidden
+            />
+            <Image
+              src="/SelectorElipse.png"
+              alt=""
+              width={250}
+              height={57}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "uniforms" ? "flex" : "hidden"}`}
+              aria-hidden
             />
           </label>
         </div>
 
-        <div className="flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="peds"
@@ -85,15 +103,24 @@ export function ItemsSelector() {
           />
           <label
             htmlFor="peds"
-            className={`flex cursor-pointer flex-col items-center ${selectedCategory === "peds" && "itemBlur font-bold"}`}
+            className={`flex cursor-pointer flex-col items-center ${selectedCategory === "peds" && "font-bold"}`}
           >
             Peds
             <Image
               src="/DownRectangle.png"
-              alt="down set"
+              alt=""
               width={104}
               height={8}
               className={`mt-4 ${selectedCategory === "peds" ? "flex" : "hidden"}`}
+              aria-hidden
+            />
+            <Image
+              src="/SelectorElipse.png"
+              alt=""
+              width={250}
+              height={57}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "peds" ? "flex" : "hidden"}`}
+              aria-hidden
             />
           </label>
         </div>
