@@ -18,7 +18,7 @@ export function ItemsDisplay() {
     imageIndex: String(index % 5) as "0" | "1" | "2" | "3" | "4",
   }));
 
-  const itemsToShow = isMobile ? 5 : 15;
+  const itemsToShow = isMobile ? 4 : 15;
 
   return (
     <section className="bg-primary-lightGray relative flex flex-col items-center justify-center">

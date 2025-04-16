@@ -31,7 +31,7 @@ export function News() {
     imageIndex: String(index % 5) as "0" | "1" | "2" | "3" | "4",
   }));
 
-  const itemsToShow = isMobile ? 3 : 5;
+  const itemsToShow = isMobile ? 2 : 5;
 
   return (
     <section className="bg-primary-darkBlue relative flex min-h-screen min-w-screen items-center justify-center">
