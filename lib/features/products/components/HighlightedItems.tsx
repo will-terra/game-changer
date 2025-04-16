@@ -7,9 +7,9 @@ export function HighlightedItems(props: Props) {
   return (
     <section className="z-10 flex h-full flex-col items-center justify-center pt-20 pb-40 lg:h-[56.25rem] lg:pt-0 lg:pb-0">
       <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-[78rem]">
-        <h2 className="mb-8 ml-4 text-[40px] font-bold uppercase">
+        <h2 className="mb-8 ml-4 text-3xl font-bold uppercase lg:text-[40px]">
           Items em
-          <span className="bg-secondary-blue ml-1 px-4 text-[40px] font-bold text-white uppercase">
+          <span className="bg-secondary-blue ml-1 px-4 text-3xl font-bold text-white uppercase lg:text-[40px]">
             destaque
           </span>
         </h2>
