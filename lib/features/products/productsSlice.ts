@@ -1,15 +1,26 @@
 import { createAppSlice } from "@/lib/createAppSlice";
-import { ProductType } from "./api/productsAPI";
+import { Product, ProductType } from "./api/productsAPI";
 import { PayloadAction } from "@reduxjs/toolkit";
+
+interface ProductsState {
+  items: Product[];
+  isLoading: boolean;
+  error: string | null;
+  selectedCategory: ProductType;
+  isMobile: boolean;
+}
+
+const initialState: ProductsState = {
+  items: [],
+  isLoading: false,
+  error: null,
+  selectedCategory: "weapons" as ProductType,
+  isMobile: typeof window !== "undefined" ? window.innerWidth < 768 : false,
+};
 
 export const productsSlice = createAppSlice({
   name: "products",
-  initialState: {
-    items: [],
-    isLoading: false,
-    error: null,
-    selectedCategory: "weapons" as ProductType,
-  },
+  initialState,
   reducers: {
     setItems: (state, action) => {
       state.items = action.payload;
@@ -23,7 +34,15 @@ export const productsSlice = createAppSlice({
     setSelectedCategory: (state, action: PayloadAction<ProductType>) => {
       state.selectedCategory = action.payload;
     },
+    setMobileStatus: (state, action: PayloadAction<boolean>) => {
+      state.isMobile = action.payload;
+    },
   },
 });
-export const { setItems, setLoading, setError, setSelectedCategory } =
-  productsSlice.actions;
+export const {
+  setItems,
+  setLoading,
+  setError,
+  setSelectedCategory,
+  setMobileStatus,
+} = productsSlice.actions;

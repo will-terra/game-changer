@@ -1,5 +1,4 @@
 import { useCallback, useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useSpringCarousel } from "react-spring-carousel";
 import {
   selectActiveItemId,
@@ -8,11 +7,12 @@ import {
   selectActiveIndex,
   CarouselItemWithRender,
 } from "../carouselSlice";
+import { useAppDispatch, useAppSelector } from "@/lib/hooks";
 
 export function useCarousel(items: CarouselItemWithRender[], initialItem = 0) {
-  const dispatch = useDispatch();
-  const activeItemId = useSelector(selectActiveItemId);
-  const activeIndex = useSelector(selectActiveIndex);
+  const dispatch = useAppDispatch();
+  const activeItemId = useAppSelector(selectActiveItemId);
+  const activeIndex = useAppSelector(selectActiveIndex);
 
   useEffect(() => {
     const serializableItems = items.map(({ render, ...item }) => ({

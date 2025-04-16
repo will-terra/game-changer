@@ -18,7 +18,10 @@ const kanit = Kanit({
 export default function RootLayout({ children }: RootLayoutProps) {
   return (
     <StoreProvider>
-      <html lang="en" className="m-0 min-h-screen p-0 font-sans">
+      <html
+        lang="en"
+        className="m-0 min-h-screen max-w-screen overflow-x-hidden p-0"
+      >
         <body
           className={`${kanit.className} scrollbar m-0 flex min-h-screen flex-col overflow-x-hidden p-0`}
         >
