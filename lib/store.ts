@@ -3,11 +3,13 @@ import { configureStore } from "@reduxjs/toolkit";
 import { backgroundApi } from "./features/shared/api/backgroundAPI";
 import { productsSlice } from "./features/products/productsSlice";
 import { productsApi } from "./features/products/api/productsAPI";
+import { carouselSlice } from "./features/carousel/carouselSlice";
 
 export const makeStore = () => {
   return configureStore({
     reducer: {
-      ["products"]: productsSlice.reducer,
+      products: productsSlice.reducer,
+      carousel: carouselSlice.reducer,
       [backgroundApi.reducerPath]: backgroundApi.reducer,
       [productsApi.reducerPath]: productsApi.reducer,
     },

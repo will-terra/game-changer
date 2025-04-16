@@ -1,4 +1,4 @@
-import { CarouselContainer } from "@/lib/features/products/components/CarouselContainer";
+import { CarouselContainer } from "@/lib/features/carousel/components/CarouselContainer";
 import { CTABanner } from "@/lib/features/products/components/CTABanner";
 import { HighlightedItems } from "@/lib/features/products/components/HighlightedItems";
 import { ItemsDisplay } from "@/lib/features/products/components/ItemsDisplay";
