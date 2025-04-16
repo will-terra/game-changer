@@ -32,7 +32,7 @@ export function ItemsDisplay() {
       />
       <ItemsSelector />
 
-      <div className="relative z-10 mt-16 flex min-h-[83rem] min-w-screen flex-col justify-start lg:mt-40">
+      <div className="relative z-10 mt-16 flex min-h-full lg:min-h-[83rem] min-w-screen flex-col justify-start lg:mt-40">
         <section className="mb-6 flex w-full justify-around">
           <p className="mb-2 text-4xl font-bold text-white/91 uppercase">
             {selectedCategory === "uniforms"

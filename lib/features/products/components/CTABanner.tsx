@@ -63,7 +63,7 @@ export function CTABanner(props: CTABannerProps) {
           alt="Five M Nite"
           width={1058}
           height={768}
-          className="absolute -right-6 ml-auto max-w-[66rem] lg:right-0"
+          className="absolute -right-4 ml-auto max-w-[66rem] lg:-right-60 2xl:right-0"
         />
       </div>
     </div>

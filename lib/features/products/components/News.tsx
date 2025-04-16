@@ -13,7 +13,7 @@ export function News() {
 
   useEffect(() => {
     const handleResize = () => {
-      dispatch(setMobileStatus(window.innerWidth < 768));
+      dispatch(setMobileStatus(window.innerWidth < 1100));
     };
     handleResize();
     window.addEventListener("resize", handleResize);

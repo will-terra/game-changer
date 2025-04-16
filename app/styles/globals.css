@@ -12,6 +12,8 @@
   --color-secondary-lightBlue: #15223f;
   --color-secondary-blue: #4996d5;
   --font-main: "Kanit", "sans-serif";
+  --breakpoint-lg: 69rem;
+  --breakpoint-3xl: 110rem;
 }
 
 @layer utilities {
@@ -36,12 +38,10 @@
   }
 
   .backgroundShadow {
-    background: linear-gradient(
-      43.26deg,
-      rgba(7, 13, 29, 0.83) 30.65%,
-      rgba(15, 27, 53, 0.629611) 50.68%,
-      rgba(15, 27, 53, 0) 71.27%
-    );
+    background: linear-gradient(43.26deg,
+        rgba(7, 13, 29, 0.83) 30.65%,
+        rgba(15, 27, 53, 0.629611) 50.68%,
+        rgba(15, 27, 53, 0) 71.27%);
   }
 
   .inactive {

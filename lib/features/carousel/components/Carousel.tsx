@@ -35,7 +35,7 @@ export function Carousel() {
   return (
     <div className="z-10 mt-20 flex h-full w-4/5 flex-col items-center justify-center pb-12 lg:pb-40">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row">
-        <div className="mb-8 flex gap-20 lg:mb-0 lg:gap-0">
+        <div className="mb-8 flex gap-40 lg:mb-0 lg:gap-0">
           {isMobile && (
             <CarouselControls onNavigate={handleNavigate} side="left" />
           )}
