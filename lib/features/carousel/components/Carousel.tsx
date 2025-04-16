@@ -32,7 +32,7 @@ export function Carousel() {
 
   return (
     <div
-      className="mt-20 flex h-full w-4/5 flex-col items-center justify-center"
+      className="z-10 mt-20 flex h-full w-4/5 flex-col items-center justify-center pb-40"
       aria-label="Carrossel de produtos"
     >
       <div className="flex w-full items-center justify-center">

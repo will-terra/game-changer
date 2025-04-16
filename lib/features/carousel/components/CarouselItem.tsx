@@ -25,7 +25,9 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
       />
       {isActive && item?.name && (
         <div className="absolute top-8 right-0 left-0 flex flex-col">
-          <p className="text-center text-xl text-white"> {item.name}</p>
+          <p className="text-center text-lg text-white uppercase">
+            {item.name}
+          </p>
           <div className="relative mx-auto flex w-fit justify-center px-12 py-4">
             <Image
               src="/BlueRectangle.svg"
@@ -35,8 +37,7 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
               aria-hidden
             />
             <p className="z-10 text-white">
-              {" "}
-              {item.price}{" "}
+              {item.price}
               {item.price === 0 || item.price === 1 ? "Quantion" : "Quantions"}
             </p>
           </div>
