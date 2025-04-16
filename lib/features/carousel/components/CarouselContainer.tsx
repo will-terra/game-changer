@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export function CarouselContainer() {
   return (
-    <div className="bg-primary-midBlue relative flex w-full justify-center">
+    <div className="bg-primary-midBlue relative flex w-full min-h-fit lg:min-h-[61.25rem] items-center justify-center">
       <Image
         src="/bg-peddings.png"
         alt="news background image"

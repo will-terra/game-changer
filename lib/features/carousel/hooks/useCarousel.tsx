@@ -44,6 +44,7 @@ export function useCarousel(items: CarouselItemWithRender[], initialItem = 0) {
     withLoop: true,
     initialActiveItem: initialItem + 1,
     items: carouselItems(),
+    disableGestures: true,
   });
 
   const updateActiveItem = useCallback(() => {

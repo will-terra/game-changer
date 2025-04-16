@@ -13,9 +13,8 @@ type CarouselItemProps = {
 export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
   return (
     <div
-      className={`relative flex h-[39rem] transform flex-col justify-between pt-40 pb-10 transition-all duration-300 ${
-        isActive ? "scale-105 opacity-100" : "opacity-70 blur"
-      } `}
+      className={`relative flex h-[39rem] transform flex-col justify-between pt-40 pb-10 transition-all duration-300 ${isActive ? "scale-105 opacity-100" : "opacity-70 blur"
+        } `}
     >
       <Image
         src={item?.images?.[0] || PLACEHOLDER_IMAGE}
@@ -46,7 +45,7 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
         </div>
       )}
       {isActive && (
-        <div className="-mt-[26rem] -ml-96 flex max-w-[24rem] flex-col gap-2">
+        <div className="mt-20 lg:-mt-[26rem] ml-0 lg:-ml-96  flex max-w-[24rem] flex-col gap-2">
           <h1 className="text-[40px] font-bold text-white uppercase">
             Peddings
           </h1>

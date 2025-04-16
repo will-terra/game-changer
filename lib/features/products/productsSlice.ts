@@ -14,7 +14,7 @@ const initialState: ProductsState = {
   items: [],
   isLoading: false,
   error: null,
-  selectedCategory: "uniforms",
+  selectedCategory: "weapons",
   isMobile: false,
 };
 
