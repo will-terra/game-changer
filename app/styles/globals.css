@@ -44,3 +44,37 @@
     );
   }
 }
+
+.use-spring-carousel-main-wrapper {
+  z-index: 10;
+  background-color: #0f1b35;
+  filter: blur(0);
+}
+
+.use-spring-carousel-track-wrapper {
+  background-color: black;
+}
+
+.use-spring-carousel-item:not(.use-spring-carousel-item) {
+  filter: blur(3px);
+  transform: scale(0.35);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.use-spring-carousel-item {
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+  transition: all 0.3s ease;
+}
+
+.inactive {
+  filter: blur(4px);
+  transition: filter 0.3s ease;
+}
+
+.active {
+  filter: none;
+  transition: filter 0.3s ease;
+}

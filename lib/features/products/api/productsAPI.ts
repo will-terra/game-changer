@@ -3,6 +3,7 @@ import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 export type ProductType = "peds" | "uniforms" | "weapons";
 
 export interface Product {
+  id: string;
   name: string;
   images: string[];
   price: number;
