@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="bg-primary-midBlue z-10 flex h-[12.75rem] w-screen items-center justify-center gap-24">
+    <footer className="bg-primary-midBlue z-10 flex flex-col lg:flex-row h-[12.75rem] w-screen items-center justify-center gap-8 lg:gap-24">
       <nav className="flex gap-7">
         <Link href="/" className="text-primary-lightGray underline">
           Política de privacidade
@@ -24,12 +24,14 @@ export default function Footer() {
         alt="Ícones de mídias sociais"
         width={220}
         height={38}
+        className="hidden lg:flex"
       />
       <Image
         src="PAL.svg"
         alt="Classificação indicativa"
         width={220}
         height={38}
+        className="hidden lg:flex"
       />
     </footer>
   );

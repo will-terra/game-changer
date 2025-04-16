@@ -4,8 +4,8 @@ import Link from "next/link";
 export default function Nav() {
   return (
     <section className="bg-primary-darkBlue flex h-[6.5rem] items-center justify-evenly">
-      <Image src="Logos.svg" alt="logo image" width={228} height={40} />
-      <nav className="flex items-center gap-8">
+      <Image src="Logos.svg" alt="logo image" width={228} height={40} className="hidden lg:flex" />
+      <nav className="hidden lg:flex items-center gap-8">
         <Link
           href="/"
           className="text-base font-normal text-white/70 uppercase"
