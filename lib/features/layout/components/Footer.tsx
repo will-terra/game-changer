@@ -24,14 +24,14 @@ export default function Footer() {
         alt="Ícones de mídias sociais"
         width={220}
         height={38}
-        className="hidden lg:flex"
+        className="hidden xl:flex"
       />
       <Image
         src="PAL.svg"
         alt="Classificação indicativa"
         width={220}
         height={38}
-        className="hidden lg:flex"
+        className="hidden xl:flex"
       />
     </footer>
   );

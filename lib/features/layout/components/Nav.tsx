@@ -9,9 +9,9 @@ export default function Nav() {
         alt="logo image"
         width={228}
         height={40}
-        className="hidden lg:flex"
+        className="hidden xl:flex"
       />
-      <nav className="hidden items-center gap-8 lg:flex">
+      <nav className="hidden items-center gap-8 xl:flex">
         <Link
           href="/"
           className="text-base font-normal text-white/70 uppercase"
