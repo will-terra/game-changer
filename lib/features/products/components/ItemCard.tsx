@@ -7,7 +7,7 @@ interface ItemCard extends Product {
 
 export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
   return (
-    <div className="bg-primary-midBlue relative flex min-h-[19.75rem] min-w-60 flex-col items-center justify-center pb-6">
+    <div className="bg-primary-midBlue relative flex min-h-[19.75rem] min-w-60 flex-col items-center justify-center pb-6 transition-all duration-300 hover:shadow-[inset_0_0_30px_8px_rgba(120,190,255,0.4)]">
       <Image
         src={`/ItemShape-${imageIndex}.png`}
         alt="items background image"
@@ -22,7 +22,7 @@ export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
           alt={name}
           width={94}
           height={180}
-          className="mt-6 self-center"
+          className="mt-6 cursor-pointer self-center transition-transform duration-300 hover:scale-125"
         />
       </div>
       <h2 className="mx-2 mb-2 text-white">{name}</h2>

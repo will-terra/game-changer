@@ -7,7 +7,7 @@ interface NewsCardProps extends Product {
 
 export function NewsCard({ name, images, price, imageIndex }: NewsCardProps) {
   return (
-    <div className="bg-primary-midBlue border-primary-lightBlue/55 relative flex min-h-52 w-52 flex-col items-center justify-center border pb-6">
+    <div className="bg-primary-midBlue border-primary-lightBlue/55 group relative flex min-h-52 w-52 flex-col items-center justify-center border pb-6 transition-all duration-300 hover:shadow-[inset_0_0_30px_8px_rgba(120,190,255,0.4)]">
       <Image
         src={`/NewsShape-${imageIndex}.png`}
         alt="items background image"

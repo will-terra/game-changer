@@ -22,6 +22,11 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
         alt={item?.name || `Item do carrossel ${index + 1}`}
         width={482}
         height={664}
+        className={
+          isActive
+            ? "z-10 scale-110 transition-transform duration-300 hover:scale-135"
+            : "-mt-20 scale-90 transition-all duration-300"
+        }
       />
       {isActive && item?.name && (
         <div className="absolute top-8 right-0 left-0 flex flex-col">

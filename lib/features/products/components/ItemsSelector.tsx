@@ -52,7 +52,7 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "weapons" ? "flex" : "hidden"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "weapons" ? "flex" : "hidden hover:flex"}`}
               aria-hidden
             />
           </label>
@@ -85,7 +85,7 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "uniforms" ? "flex" : "hidden"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "uniforms" ? "flex" : "hidden hover:flex"}`}
               aria-hidden
             />
           </label>
@@ -119,7 +119,7 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "peds" ? "flex" : "hidden"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "peds" ? "flex" : "hidden hover:flex"}`}
               aria-hidden
             />
           </label>

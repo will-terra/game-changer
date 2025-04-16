@@ -9,7 +9,7 @@ export function HighlightedItems(props: Props) {
       <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-[78rem]">
         <h2 className="mb-8 ml-4 text-3xl font-bold uppercase lg:text-[40px]">
           Items em
-          <span className="bg-secondary-blue ml-1 px-4 text-3xl font-bold text-white uppercase lg:text-[40px]">
+          <span className="bg-secondary-blue hover:bg-secondary-blue/70 ml-1 px-4 text-3xl font-bold text-white uppercase lg:text-[40px]">
             destaque
           </span>
         </h2>
@@ -58,7 +58,7 @@ export function HighlightedItems(props: Props) {
         </div>
         <Link
           href="/"
-          className="bg-secondary-blue mx-auto mt-8 w-fit px-32 py-4 text-white uppercase lg:px-40"
+          className="bg-secondary-blue hover:bg-secondary-blue/70 mx-auto mt-8 w-fit px-32 py-4 text-white uppercase lg:px-40"
         >
           Acessar Jogo
         </Link>
