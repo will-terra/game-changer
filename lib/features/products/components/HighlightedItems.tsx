@@ -5,15 +5,15 @@ type Props = {};
 
 export function HighlightedItems(props: Props) {
   return (
-    <section className="flex h-[56.25rem] flex-col items-center justify-center">
-      <div className="flex w-[78rem] flex-col justify-center gap-4">
+    <section className="z-10 flex h-full flex-col items-center justify-center pt-20 pb-40 lg:h-[56.25rem] lg:pt-0 lg:pb-0">
+      <div className="flex w-full flex-col items-center justify-center gap-4 lg:w-[78rem]">
         <h2 className="mb-8 ml-4 text-[40px] font-bold uppercase">
           Items em
           <span className="bg-secondary-blue ml-1 px-4 text-[40px] font-bold text-white uppercase">
             destaque
           </span>
         </h2>
-        <div className="grid grid-cols-3 place-items-center gap-12">
+        <div className="flex flex-col items-center gap-12 lg:grid lg:grid-cols-3 lg:place-items-center">
           <HighlightedItemCard
             size="large"
             backgroundImage="/HighlightedShape-0.png"
@@ -22,7 +22,7 @@ export function HighlightedItems(props: Props) {
             image="https://s3-alpha-sig.figma.com/img/e2c3/d9b8/0df16a8c453962d1f4cbaa14622982b0?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=FeloV-k10ZqvgVM6wzu2GPNx4HhqLknOhOwGFTgz7~aFFd8oSYglGlUWVFABnVZZneEFRZBLLktV2~fk~TO9hmDogJx5V9GumP0-1AggAsSyjTlqhpYVW1i9slWYXdk1Xgr-yAZSl85gV5bBmF1PDDI6CjJW879MFnfpq0S0tTLW47HmcMAwfxzt4GBXtycnSFhLAPAf~2nm2SKVXmpKYwkyC4oxWP6Hee4JNx4gVCHZp4pRBvvmN9ta-JJKs7PJEi0sHwWmJm-JxFuIC48uIke9H3v2uM7Nda42I3IgilU6zOOCe98Tdb~0rQaw8wbsYYjq6b-jtYq1wCa0ewzCZg__"
           />
 
-          <div className="flex h-[30rem] w-[27rem] flex-col items-center justify-between gap-4">
+          <div className="flex h-full w-full flex-col items-center justify-between gap-4 lg:h-[30rem] lg:w-[27rem]">
             <HighlightedItemCard
               size="small"
               backgroundImage="/HighlightedShape-1.png"
@@ -58,7 +58,7 @@ export function HighlightedItems(props: Props) {
         </div>
         <Link
           href="/"
-          className="bg-secondary-blue mx-auto mt-8 w-fit px-40 py-4 text-white uppercase"
+          className="bg-secondary-blue mx-auto mt-8 w-fit px-32 py-4 text-white uppercase lg:px-40"
         >
           Acessar Jogo
         </Link>
