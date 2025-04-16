@@ -26,7 +26,7 @@ export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
         />
       </div>
       <h2 className="mx-2 mb-2 text-white">{name}</h2>
-      <div className="relative flex w-fit justify-center px-4 py-0.5">
+      <div className="relative flex w-fit min-w-40 justify-center px-6 py-0.5">
         <Image
           src="/PriceRectangle.png"
           alt="price flag"
@@ -34,7 +34,9 @@ export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
           className="absolute inset-0 z-0 h-full w-full"
           aria-hidden
         />
-        <p className="z-10 text-white"> {price} Quantions</p>
+        <p className="z-10 text-white">
+          {price} {price === 0 || price === 1 ? " Quantion" : " Quantions"}
+        </p>
       </div>
     </div>
   );

@@ -28,7 +28,9 @@ export function NewsCard({ name, images, price, imageIndex }: NewsCardProps) {
           className="absolute inset-0 z-0 h-full w-full"
           aria-hidden
         />
-        <p className="z-10 text-white"> {price} Quantions</p>
+        <p className="z-10 text-white">
+          {price} {price === 0 || price === 1 ? " Quantion" : " Quantions"}
+        </p>
       </div>
     </div>
   );

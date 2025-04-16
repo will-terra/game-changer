@@ -27,7 +27,7 @@ export function CTABanner(props: CTABannerProps) {
             {title}
           </h2>
           <p className="bg-secondary-blue px-12 py-4 text-xl font-bold text-white uppercase">
-            {subTitle}{" "}
+            {subTitle}
           </p>
 
           <p className="text-white">{description}</p>
