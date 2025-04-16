@@ -20,7 +20,7 @@ export function CTABanner(props: CTABannerProps) {
   const futureDate = "2025-04-27T12:00:00.000Z";
 
   return (
-    <div className="bg-primary-midBlue flex h-[48rem] w-screen items-center justify-center overflow-hidden">
+    <div className="bg-primary-midBlue flex h-full w-screen flex-col place-self-center overflow-hidden pt-32 pb-96 lg:h-[48rem] lg:flex-row lg:pt-0 lg:pb-0">
       <div className="flex w-full justify-center">
         <div className="flex h-full max-w-[27.25rem] flex-col items-start justify-center gap-8">
           <h2 className="text-[40px] font-bold text-white uppercase">
@@ -52,7 +52,7 @@ export function CTABanner(props: CTABannerProps) {
               alt="Acessar Jogo"
               width={232}
               height={48}
-              className="mt-2 hover:fill-amber-300"
+              className="mt-2 mb-12"
             />
           </Link>
         </div>

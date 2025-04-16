@@ -51,7 +51,7 @@ export function News() {
       )}
       <div className="backgroundShadow absolute inset-0 z-[1]"></div>
       <div className="relative z-10 mt-20 flex flex-col justify-center lg:mt-60">
-        <h1 className="mb-5 text-center text-4xl leading-none font-bold text-white uppercase md:text-[4rem]">
+        <h1 className="mb-5 text-center text-4xl leading-none font-bold text-white uppercase lg:text-[4rem]">
           Explore as <br />
           skins especiais
         </h1>

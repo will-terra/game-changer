@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Nav() {
   return (
-    <section className="bg-primary-darkBlue flex h-[6.5rem] items-center justify-evenly">
+    <section className="bg-primary-darkBlue flex h-[6.5rem] w-screen items-center justify-evenly">
       <Image
         src="Logos.svg"
         alt="logo image"

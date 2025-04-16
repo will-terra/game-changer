@@ -15,7 +15,7 @@ const initialState: ProductsState = {
   isLoading: false,
   error: null,
   selectedCategory: "weapons" as ProductType,
-  isMobile: typeof window !== "undefined" ? window.innerWidth < 768 : false,
+  isMobile: false,
 };
 
 export const productsSlice = createAppSlice({
