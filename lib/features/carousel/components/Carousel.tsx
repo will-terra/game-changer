@@ -3,9 +3,7 @@ import { useCallback } from "react";
 import { useGetProductsQuery } from "../../products/api/productsAPI";
 import { CarouselItem } from "./CarouselItem";
 import { CarouselControls } from "./CarouselControls";
-import { useCarouselRedux } from "../hooks/useCarousel";
-
-const PLACEHOLDER_IMAGE = "/PlaceholderPed.webp";
+import { useCarousel } from "../hooks/useCarousel";
 
 export function Carousel() {
   const { data: items } = useGetProductsQuery("peds");
@@ -28,18 +26,13 @@ export function Carousel() {
     }));
   }, [items]);
 
-  const {
-    carouselFragment,
-    activeIndex,
-    handleNavigate,
-    handleSelectItem,
-    itemsCount,
-  } = useCarouselRedux(prepareCarouselItems());
+  const { carouselFragment, handleNavigate } = useCarousel(
+    prepareCarouselItems(),
+  );
 
   return (
     <div
-      className="mt-20 flex h-fit max-h-[40rem] w-4/5 flex-col items-center justify-center"
-      role="region"
+      className="mt-20 flex h-full w-4/5 flex-col items-center justify-center"
       aria-label="Carrossel de produtos"
     >
       <div className="flex w-full items-center justify-center">

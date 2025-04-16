@@ -9,10 +9,7 @@ import {
   CarouselItemWithRender,
 } from "../carouselSlice";
 
-export function useCarouselRedux(
-  items: CarouselItemWithRender[],
-  initialItem = 0,
-) {
+export function useCarousel(items: CarouselItemWithRender[], initialItem = 0) {
   const dispatch = useDispatch();
   const activeItemId = useSelector(selectActiveItemId);
   const activeIndex = useSelector(selectActiveIndex);
@@ -58,12 +55,7 @@ export function useCarouselRedux(
 
   useEffect(() => {
     updateActiveItem();
-    const intervalId = setInterval(() => {
-      slideToNextItem();
-      updateActiveItem();
-    }, 5000);
-    return () => clearInterval(intervalId);
-  }, [updateActiveItem, slideToNextItem]);
+  }, []);
 
   const handleNavigate = useCallback(
     (direction: "next" | "prev") => {
