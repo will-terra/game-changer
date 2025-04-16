@@ -6,6 +6,7 @@ import { ItemsSelector } from "./ItemsSelector";
 import { useAppSelector } from "@/lib/hooks";
 
 export function ItemsDisplay() {
+  const isMobile = useAppSelector((state) => state.products.isMobile);
   const selectedCategory = useAppSelector(
     (state) => state.products.selectedCategory,
   );
@@ -16,6 +17,8 @@ export function ItemsDisplay() {
     ...item,
     imageIndex: String(index % 5) as "0" | "1" | "2" | "3" | "4",
   }));
+
+  const itemsToShow = isMobile ? 5 : 15;
 
   return (
     <section className="bg-primary-lightGray relative flex flex-col items-center justify-center">
@@ -29,7 +32,7 @@ export function ItemsDisplay() {
       />
       <ItemsSelector />
 
-      <div className="relative z-10 mt-40 flex min-h-[83rem] min-w-screen flex-col justify-start">
+      <div className="relative z-10 mt-16 flex min-h-[83rem] min-w-screen flex-col justify-start lg:mt-40">
         <section className="mb-6 flex w-full justify-around">
           <p className="mb-2 text-4xl font-bold text-white/91 uppercase">
             {selectedCategory === "uniforms"
@@ -45,7 +48,7 @@ export function ItemsDisplay() {
 
         <div className="mx-auto mb-40 grid w-fit grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {items
-            ?.slice(0, 15)
+            ?.slice(0, itemsToShow)
             .map((item) => <ItemCard key={item.name} {...item} />)}
         </div>
       </div>

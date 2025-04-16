@@ -14,15 +14,16 @@ export function ItemsSelector() {
   };
 
   return (
-    <div className="bg-secondary-lightBlue z-10 mt-50 flex h-20 w-[37.5rem] items-center justify-between">
+    <div className="bg-secondary-lightBlue z-10 mt-20 flex h-52 w-[37.5rem] items-center justify-between lg:mt-50 lg:h-20">
       <Image
         src="/SelectorBorder.svg"
         alt="selector border"
         width={12}
         height={56}
         aria-hidden
+        className="hidden lg:flex"
       />
-      <div className="mt-5 mr-14 flex h-full w-[19.75rem] gap-4 p-4 text-white">
+      <div className="mt-5 mr-14 ml-10 flex h-full w-[19.75rem] flex-col gap-4 p-4 text-white lg:ml-0 lg:flex-row">
         <div className="flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
@@ -102,7 +103,7 @@ export function ItemsSelector() {
         alt="selector border"
         width={12}
         height={56}
-        className="scale-x-[-1]"
+        className="hidden scale-x-[-1] lg:flex"
         aria-hidden
       />
     </div>
