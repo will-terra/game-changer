@@ -33,9 +33,7 @@ export function Carousel() {
   );
 
   return (
-    <div
-      className="z-10 mt-20 flex h-full w-4/5 flex-col items-center justify-center pb-12 lg:pb-40"
-    >
+    <div className="z-10 mt-20 flex h-full w-4/5 flex-col items-center justify-center pb-12 lg:pb-40">
       <div className="flex w-full flex-col items-center justify-center lg:flex-row">
         <div className="mb-8 flex gap-20 lg:mb-0 lg:gap-0">
           {isMobile && (
@@ -43,7 +41,7 @@ export function Carousel() {
           )}
           <CarouselControls onNavigate={handleNavigate} side="right" />
         </div>
-        <div className="z-0 w-[80rem] h-[57rem] lg:h-full overflow-x-hidden overflow-y-visible lg:overflow-y-hidden">
+        <div className="z-0 h-[57rem] w-[80rem] overflow-x-hidden overflow-y-visible lg:h-full lg:overflow-y-hidden">
           <div className="z-10 mx-auto max-w-96 justify-center">
             {carouselFragment}
           </div>
