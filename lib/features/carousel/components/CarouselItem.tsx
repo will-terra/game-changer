@@ -20,8 +20,8 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
       <Image
         src={item?.images?.[0] || PLACEHOLDER_IMAGE}
         alt={item?.name || `Item do carrossel ${index + 1}`}
-        width={422}
-        height={564}
+        width={482}
+        height={664}
       />
       {isActive && item?.name && (
         <div className="absolute top-8 right-0 left-0 flex flex-col">
