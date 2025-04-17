@@ -48,7 +48,13 @@ export default function Nav() {
         >
           Suporte
         </Link>
-        <Image src="Cart.svg" alt="cart" width={36} height={24} />
+        <Image
+          src="/Cart.svg"
+          alt="cart"
+          width={36}
+          height={24}
+          className="h-auto"
+        />
       </nav>
       <div className="flex items-center gap-8">
         <Image
