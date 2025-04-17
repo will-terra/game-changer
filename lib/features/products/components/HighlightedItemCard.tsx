@@ -31,7 +31,7 @@ export function HighlightedItemCard(props: HighlightedItemCardProps) {
         <div className="relative flex w-fit justify-center px-12 py-8">
           <Image
             src="/HighlightedRectangle.svg"
-            alt="price flag"
+            alt="Highlighted item flag"
             fill
             className="absolute inset-0 z-0 h-full w-full"
             aria-hidden
@@ -64,7 +64,7 @@ export function HighlightedItemCard(props: HighlightedItemCardProps) {
         <div className="relative flex w-fit justify-center px-6 py-6 lg:px-12">
           <Image
             src="/HighlightedRectangle.svg"
-            alt="price flag"
+            alt="Highlighted item flag"
             fill
             className="absolute inset-0 z-0 h-full w-full"
             aria-hidden

@@ -43,7 +43,7 @@ export function News() {
           alt="news background image"
           width={1920}
           height={1030}
-          className="absolute inset-0 z-0 min-h-full w-full object-cover"
+          className="absolute inset-0 z-0 min-h-full w-full object-fill lg:object-cover"
           priority
         />
       ) : (
