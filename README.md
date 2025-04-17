@@ -2,7 +2,7 @@
 
 ## 🚀 Sobre o Projeto
 
-Projeto desenvolvido como teste técnico para uma empresa de mods de FiveM, consistindo em uma landing page moderna para games. A aplicação demonstra:
+Projeto desenvolvido como teste técnico, consistindo em uma landing page moderna para games. A aplicação demonstra:
 
 - Carrossel dinâmico com animações fluidas
 - Design responsivo e adaptável
