@@ -23,7 +23,7 @@ export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
             alt={name}
             width={94}
             height={180}
-            className="mt-6 cursor-pointer self-center transition-transform duration-300 group-hover:scale-125"
+            className="mt-6 self-center transition-transform duration-300 group-hover:scale-125"
           />
         </div>
         <h2 className="mx-2 mb-2 text-white">{name}</h2>
