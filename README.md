@@ -24,10 +24,10 @@ Projeto desenvolvido como teste técnico para uma empresa de mods de FiveM, cons
 - - Ambiente de execução: [Node.js](https://nodejs.org/ "Site oficial do Node.js")
 
 ```bash
-git clone https://github.com/will-terra/game-changer.git
-cd E-commerce-LifeApps-Challenge
-npm install
-npm run dev
+$ git clone https://github.com/will-terra/game-changer.git
+$ cd game-changer
+$ npm install
+$ npm run dev
 ```
 
 O projeto poderá ser acessado através do endereço http://localhost:3000
