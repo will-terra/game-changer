@@ -25,7 +25,7 @@ export function ItemsSelector() {
         className="hidden lg:flex"
       />
       <div className="mt-5 mr-14 ml-10 flex h-full w-[19.75rem] flex-col gap-4 p-4 text-white lg:ml-0 lg:flex-row">
-        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="group relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="weapons"
@@ -45,7 +45,7 @@ export function ItemsSelector() {
               alt=""
               width={104}
               height={8}
-              className={`mt-4 ${selectedCategory === "weapons" ? "flex" : "hidden"}`}
+              className={`mt-4 ${selectedCategory === "weapons" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
             <Image
@@ -53,12 +53,12 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "weapons" ? "flex" : "hidden hover:flex"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "weapons" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
           </label>
         </div>
-        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="group relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="uniforms"
@@ -78,7 +78,7 @@ export function ItemsSelector() {
               alt=""
               width={104}
               height={8}
-              className={`mt-4 ${selectedCategory === "uniforms" ? "flex" : "hidden"}`}
+              className={`mt-4 ${selectedCategory === "uniforms" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
             <Image
@@ -86,13 +86,13 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "uniforms" ? "flex" : "hidden hover:flex"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "uniforms" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
           </label>
         </div>
 
-        <div className="relative flex h-full min-w-[6.75rem] flex-col items-center">
+        <div className="group relative flex h-full min-w-[6.75rem] flex-col items-center">
           <input
             type="radio"
             id="peds"
@@ -112,7 +112,7 @@ export function ItemsSelector() {
               alt=""
               width={104}
               height={8}
-              className={`mt-4 ${selectedCategory === "peds" ? "flex" : "hidden"}`}
+              className={`mt-4 ${selectedCategory === "peds" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
             <Image
@@ -120,7 +120,7 @@ export function ItemsSelector() {
               alt=""
               width={250}
               height={57}
-              className={`absolute bottom-0 mb-2 ${selectedCategory === "peds" ? "flex" : "hidden hover:flex"}`}
+              className={`absolute bottom-0 mb-2 ${selectedCategory === "peds" ? "flex" : "hidden group-hover:flex"}`}
               aria-hidden
             />
           </label>

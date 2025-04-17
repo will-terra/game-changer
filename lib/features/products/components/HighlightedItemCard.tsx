@@ -25,7 +25,7 @@ export function HighlightedItemCard(props: HighlightedItemCardProps) {
           alt={name}
           width={216}
           height={216}
-          className="z-10 flex  transition-transform duration-300 hover:scale-115 "
+          className="z-10 flex transition-transform duration-300 hover:scale-115"
         />
         <h2 className="text-primary-gray mx-1 mt-14 text-2xl">{name}</h2>
         <div className="relative flex w-fit justify-center px-12 py-8">
