@@ -7,8 +7,8 @@ interface ItemCard extends Product {
 
 export function ItemCard({ name, images, price, imageIndex }: ItemCard) {
   return (
-    <div className="bg-primary-midBlue group flex flex-col min-h-[19.75rem] min-w-60 justify-center items-center">
-      <div className=" relative flex w-full h-full flex-col items-center justify-center pb-6 transition-all duration-300 group-hover:shadow-[inset_0_0_30px_8px_rgba(120,190,255,0.4)]">
+    <div className="bg-primary-midBlue group flex min-h-[19.75rem] min-w-60 flex-col items-center justify-center">
+      <div className="relative flex h-full w-full flex-col items-center justify-center pb-6 transition-all duration-300 group-hover:shadow-[inset_0_0_30px_8px_rgba(120,190,255,0.4)]">
         <Image
           src={`/ItemShape-${imageIndex}.png`}
           alt="items background image"
