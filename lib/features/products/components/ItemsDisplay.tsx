@@ -46,7 +46,7 @@ export function ItemsDisplay() {
           <Image src="/Filtros.svg" alt="filtros" width={140} height={32} />
         </section>
 
-        <div className="2x:grid-cols-5 mx-auto mb-40 grid w-fit grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
+        <div className="mx-auto mb-40 grid w-fit grid-cols-1 gap-4 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
           {items
             ?.slice(0, itemsToShow)
             .map((item) => <ItemCard key={item.name} {...item} />)}

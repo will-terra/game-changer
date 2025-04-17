@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Product } from "../../products/api/productsAPI";
-import Link from "next/link";
+import { BlueButton } from "../../products/components/BlueButton";
 
 const PLACEHOLDER_IMAGE = "/PlaceholderPed.webp";
 
@@ -60,15 +60,7 @@ export function CarouselItem({ item, isActive, index }: CarouselItemProps) {
               ? item.description.substring(0, 150) + "..."
               : ""}
           </p>
-          <Link href="#">
-            <Image
-              src="/CTAButton.svg"
-              alt="Acessar Jogo"
-              width={232}
-              height={48}
-              className="mt-2"
-            />
-          </Link>
+          <BlueButton href="#">Acessar Jogo </BlueButton>
         </div>
       )}
       {isActive && (
